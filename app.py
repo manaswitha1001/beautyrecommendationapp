@@ -116,23 +116,23 @@ svd_best_model.fit(review_data.build_full_trainset())
 
 
 # Add background image 
-def add_bg_from_local(image_file):
-    with open(image_file, "rb") as image_file:
-        encoded_string = base64.b64encode(image_file.read())
+def add_bg_from_github(image_url):
     st.markdown(
-    f"""
-    <style>
-    .stApp {{
-        background-image: url(data:image/{"jpg"};base64,{encoded_string.decode()});
-        background-size: cover
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
+        f"""
+        <style>
+        .stApp {{
+            background-image: url({image_url});
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
     )
-background_image_path = 'https://raw.githubusercontent.com/manaswitha1001/beautyrecommendationapp/6053306d2930a7d471fad19b039746131e79c6e4/images/makeup.jpg'
 
-add_bg_from_local(background_image_path) 
+# Example usage:
+background_image_url = 'https://raw.githubusercontent.com/manaswitha1001/beautyrecommendationapp/6053306d2930a7d471fad19b039746131e79c6e4/images/makeup.jpg'
+add_bg_from_github(background_image_url)
+
 
 # Side bar 
 st.sidebar.header('User Input')
