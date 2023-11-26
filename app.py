@@ -130,7 +130,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-background_image_path = '/Users/lakshmimanaswitha.ch/Library/CloudStorage/OneDrive-AHEAD/Desktop/aheadproject/sephora/makeup.jpg'
+background_image_path = 'https://github.com/manaswitha1001/beautyrecommendationapp/blob/main/images/makeup.jpg'
 
 add_bg_from_local(background_image_path) 
 
