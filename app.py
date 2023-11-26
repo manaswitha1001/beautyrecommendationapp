@@ -10,13 +10,13 @@ from surprise import Dataset, Reader, KNNBasic, SVD, NMF, dump
 from surprise.model_selection import train_test_split
 
 #Load product data
-df_product_info = pd.read_csv("/Users/lakshmimanaswitha.ch/Library/CloudStorage/OneDrive-AHEAD/Desktop/aheadproject/sephora/product_info.csv", header = 0)
+df_product_info = pd.read_csv("https://raw.githubusercontent.com/manaswitha1001/beautyrecommendationapp/main/datasets/product_info.csv", header = 0)
 df_product = df_product_info[['product_id', 'product_name', 'brand_name','ingredients','highlights', 'primary_category', 'secondary_category', 'tertiary_category']]
 df_product['tertiary_category'].fillna(df_product['secondary_category'], inplace=True)
 df_product = df_product.dropna()
 
 #Load reviews data
-df_reviews = pd.read_csv('/Users/lakshmimanaswitha.ch/Library/CloudStorage/OneDrive-AHEAD/Desktop/aheadproject/sephora/reviews_1250-end.csv', header = 0, low_memory=False)
+df_reviews = pd.read_csv('https://raw.githubusercontent.com/manaswitha1001/beautyrecommendationapp/main/datasets/reviews.csv', header = 0, low_memory=False)
 df_review = df_reviews[['author_id', 'product_id', 'rating']]
 df_review = df_review.drop_duplicates()
 reader = Reader(rating_scale=(0, 5))
