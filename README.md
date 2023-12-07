@@ -1,5 +1,7 @@
 # Sephora Beauty Recommender 
 
+https://beautyrecommender.streamlit.app/
+
 Sephora stands out as a leading e-commerce platform, globally renowned for its vast selection of high-quality cosmetics and beauty products. The platform offers a diverse range of items, including skincare, makeup, hair care, and perfumes from reputable brands. Navigating through numerous options, product complexity, limited information, and slow search speed poses challenges for customers. To address these issues, the development of a product recommendation system becomes crucial. Such a system aims to enhance the shopping experience, provide tailored suggestions, and boost overall sales.
 
 The primary objective is to offer customers personalized product recommendations based on their preferences and characteristics.
