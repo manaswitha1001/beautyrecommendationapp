@@ -111,6 +111,6 @@ Execute the app script to start the local development server.
     streamlit run app.py
 ```
 
-The app is dpeloyed in the Streamliot community cloud
+The app is dpeloyed in the Streamlit community cloud
 App Link - https://beautyrecommender.streamlit.app/
 
