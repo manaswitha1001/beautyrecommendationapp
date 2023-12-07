@@ -1,6 +1,6 @@
 # Sephora Beauty Recommender 
 
-https://beautyrecommender.streamlit.app/
+App Link - https://beautyrecommender.streamlit.app/
 
 Sephora stands out as a leading e-commerce platform, globally renowned for its vast selection of high-quality cosmetics and beauty products. The platform offers a diverse range of items, including skincare, makeup, hair care, and perfumes from reputable brands. Navigating through numerous options, product complexity, limited information, and slow search speed poses challenges for customers. To address these issues, the development of a product recommendation system becomes crucial. Such a system aims to enhance the shopping experience, provide tailored suggestions, and boost overall sales.
 
@@ -89,7 +89,15 @@ Tabel 2. Dataframe review
 | 1          | 5478482359   | 3      | 1              | 1.0         | 0.333333             | 3                        | 2                        | 2021-12-17      | I gave this 3 stars because it give me tiny li...    | it keeps oily skin under control      | mediumTan    | brown     | oily        | black      | P379064    | Lotus Balancing & Hydrating Natural Face Treat... | Clarins    | 65.0      |
 | 2          | 29002209922  | 5      | 1              | 1.0         | 1.000000             | 2                        | 0                        | 2021-06-07      | Works well as soon as I wash my face and pat d...    | Worth the money!                      | lightMedium   | brown     | dry         | black      | P379064    | Lotus Balancing & Hydrating Natural Face Treat... | Clarins    | 65.0      |
 
+## Models 
+Trait Picker - TFIDF Vectorization 
+SquadSuggest - SVD, KNN
 
+## Evaluation Metrics 
+RMSE
+MAE
+Precison
+Recall 
 
 ## Installation
 
@@ -113,6 +121,5 @@ Execute the app script to start the local development server.
     streamlit run app.py
 ```
 
-The app is dpeloyed in the Streamlit community cloud
-App Link - https://beautyrecommender.streamlit.app/
+
 
