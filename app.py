@@ -242,7 +242,7 @@ def build_streamlit_uis(df_product_info ,df_product, df_review,similarity_matrix
     background_image_url = 'https://raw.githubusercontent.com/manaswitha1001/beautyrecommendationapp/6053306d2930a7d471fad19b039746131e79c6e4/images/makeup.jpg'
     add_bg_image(background_image_url)
     preference = st.sidebar.slider('Choose number of recommendations', 0, 10, 5)
-    page_options = ['FavFinder','TraitPicker','SquadSuggester', 'BlendBuddy']
+    page_options = ['FavFinder','TraitPicker','SquadSuggester']
     choice = st.sidebar.selectbox('Select Page', page_options)
 
 
